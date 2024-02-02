@@ -1,9 +1,10 @@
 # dotfiles
-.*/
+*
 !fish/
 !kitty/
 !nvim/
 !omf/
+!.git/
 
 # General
 .DS_Store
