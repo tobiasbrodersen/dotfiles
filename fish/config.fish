@@ -2,6 +2,9 @@ if status is-interactive
     # Commands to run in interactive sessions can go here
 end
 
+# My work MAC has iso layout, map the section key to tilde
+alias isoansi="sudo hidutil property --set '{"UserKeyMapping":[{"HIDKeyboardModifierMappingSrc":0x700000064,"HIDKeyboardModifierMappingDst":0x700000035}]}'"
+
 # ~/.local.bin
 set -x PATH ~/.local/bin/ $PATH
 
@@ -19,3 +22,7 @@ alias vim="nvim"
 
 # kubernetes
 alias k="kubectl"
+
+# golang
+set -x GOPATH $HOME/go
+set -x PATH $PATH $GOPATH/bin
