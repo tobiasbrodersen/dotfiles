@@ -1,10 +1,15 @@
-# dotfiles
+# Ignore everything
 *
-!fish/
-!kitty/
-!nvim/
-!omf/
-!.git/
 
-# General
-.DS_Store
+# Except the kitty and fish directories and all of their contents
+!.git/
+!./git**
+!kitty/
+!kitty/**
+!nvim/
+!nvim/**
+!fish/
+!fish/**
+!omf/
+!omf/**
+
