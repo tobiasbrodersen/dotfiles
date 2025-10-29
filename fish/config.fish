@@ -13,6 +13,9 @@ set -x PATH "/Users/toby/Library/Python/3.12/bin" "$PATH"
 # brew
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
+# brew psql
+set -x PATH "/opt/homebrew/opt/libpq/bin" "$PATH"
+
 # neovim
 alias v="nvim"
 alias vi="nvim"
@@ -24,3 +27,16 @@ alias k="kubectl"
 # golang
 set -x GOPATH $HOME/go
 set -x PATH $PATH $GOPATH/bin
+
+# python
+function p
+    set pythonVersion $argv[1]
+    set filename $argv[2]
+
+    if test -z "$pythonVersion" -o -z "$filename"
+        echo "Usage: p <pythonVersion> <filename>"
+        return 1
+    end
+
+    python$pythonVersion -m venv $filename
+end
