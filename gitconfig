@@ -1,0 +1,7 @@
+[user]
+	email = tobis@tobs.io
+	name = Tobias Brodersen
+[pull]
+	rebase = true
+[alias]
+	au = add -u

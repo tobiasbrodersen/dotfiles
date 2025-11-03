@@ -2,6 +2,9 @@ if status is-interactive
     # Commands to run in interactive sessions can go here
 end
 
+# GIT
+set -x GIT_CONFIG_GLOBAL "~/.config/gitconfig"
+
 # ~/.local.bin
 set -x PATH ~/.local/bin/ $PATH
 
