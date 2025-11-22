@@ -24,6 +24,9 @@ alias v="nvim"
 alias vi="nvim"
 alias vim="nvim"
 
+# kitty SSH
+alias s="kitten ssh"
+
 # kubernetes
 alias k="kubectl"
 
@@ -43,3 +46,6 @@ function p
 
     python$pythonVersion -m venv $filename
 end
+
+# Gcloud
+if [ -f '/Users/toby/Downloads/google-cloud-sdk/path.fish.inc' ]; . '/Users/toby/Downloads/google-cloud-sdk/path.fish.inc'; end
